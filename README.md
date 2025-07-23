@@ -57,13 +57,13 @@ step = config[dataset]["step"]
   Random seed(s) for reproducibility of injection/imputation routines.
 
 - `--cum_pcts 0.05 0.05 0.1 0.2`  
-  Cumulative proportions of missingness to inject (`5`,`10`,`20`,`40`) in successive rounds.
+  Cumulative percentages of nulls to inject (`5`,`10`,`20`,`40`) in successive rounds.
 
 - `--initial {initial}`  
   Starting chunk size.
 
 - `--step {step}`  
-  Increment added new tuples.
+  Incrementally added new tuples.
 
 - `--mode {mode}`  
   Controls what the script does:  
