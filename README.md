@@ -60,10 +60,10 @@ step = config[dataset]["step"]
   Cumulative proportions of missingness to inject in successive rounds (example values shown).
 
 - `--initial {initial}`  
-  Starting percentage (or count) of values to inject as missing before incremental steps begin.
+  Starting chunk size.
 
 - `--step {step}`  
-  Increment added to the missingness level at each round when not using explicit `--cum_pcts`.
+  Increment added new tuples.
 
 - `--mode {mode}`  
   Controls what the script does:  
