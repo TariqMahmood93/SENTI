@@ -18,8 +18,8 @@ of dynamic data imputation tasks, providing a robust solution for handling missi
 ____________________________________________________________________
 ```bash
 # Define which dataset you want to run
-dataset = "mammogram"
-seed = 584
+dataset = "adultsample"
+seed = 1234
 path = f"/root/workspace/Dynamic_Data_Imputation/v2/{dataset}"
 
 config = {
@@ -45,4 +45,29 @@ step = config[dataset]["step"]
 #--mode inject \   # Only inject nulls:
 #--mode SENT-I \   # Only run imputation (expects *_nonimputed.csv files already present):
 #--mode all \      # Do both injection and imputation in sequence:
+```
+
+## To run the IPM algorithm
+____________________________________________________________________
+```bash
+dataset  = "adultsample"
+folder   = "one_third_step_10%"
+seed     = 1234
+training = "fixed" # "fixed" or "Retraining"
+split    = "70_30"
+path      = f"/root/workspace/IPM-main/Dynamic_data/{dataset}/{split}/{training}_{folder}"
+code_file = f"/root/workspace/IPM-main/src/ipm_multi_v5_with_{training}.py"
+
+# 2) %run with $‑expansion of Python variables
+%run $code_file \
+  --model_type roberta \
+  --model_name_or_path deepset/roberta-base-squad2 \
+  --data_dir $path \
+  --dataset $dataset \
+  --train_batch_size 32 \
+  --eval_batch_size 32 \
+  --max_seq_length 75 \
+  --num_epochs 2 \
+  --seed $seed
+
 ```
