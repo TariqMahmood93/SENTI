@@ -33,6 +33,7 @@ config = {
 
 initial = config[dataset]["initial"]
 step = config[dataset]["step"]
+
 %run /root/workspace/Dynamic_Data_Imputation/v2/zCode/main.py \
   --path {path} \
   --datasets {dataset} \
@@ -41,4 +42,8 @@ step = config[dataset]["step"]
   --initial {initial} \
   --step {step} \
   --mode all
+
+#--mode inject \   # Only inject nulls:
+#--mode SENT-I \   # Only run imputation (expects *_nonimputed.csv files already present):
+#--mode all \      # Do both injection and imputation in sequence:
 ```
