@@ -3,7 +3,7 @@
 We propose a novel and innovative data imputation technique called Sentence Transformer-based Imputation (SENT-I).
  SENT-I leverages advanced indexing techniques to perform quick and accurate similarity searches, powered by 
 state-of-the-art sentence transformer models. This approach is designed to enhance the accuracy and efficiency 
-of data imputation tasks, providing a robust solution for handling missing data.
+of dynamic data imputation tasks, providing a robust solution for handling missing data.
 
 
 ## Requirements
