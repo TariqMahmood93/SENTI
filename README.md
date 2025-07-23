@@ -45,6 +45,31 @@ step = config[dataset]["step"]
 #--mode SENT-I \   # Only run imputation (expects *_nonimputed.csv files already present):
 #--mode all \      # Do both injection and imputation in sequence:
 ```
+**Arguments**
+
+- `--path {path}`  
+  Path to the working directory (where input files are read from and outputs/logs are written).
+
+- `--datasets {dataset}`  
+  One or more dataset identifiers to process (e.g., `adult`, `mnist`). Space‑separate or repeat the flag, depending on your parser.
+
+- `--seeds {seed}`  
+  Random seed(s) for reproducibility of injection/imputation routines.
+
+- `--cum_pcts 0.05 0.05 0.1 0.2`  
+  Cumulative proportions of missingness to inject in successive rounds (example values shown).
+
+- `--initial {initial}`  
+  Starting percentage (or count) of values to inject as missing before incremental steps begin.
+
+- `--step {step}`  
+  Increment added to the missingness level at each round when not using explicit `--cum_pcts`.
+
+- `--mode {mode}`  
+  Controls what the script does:  
+  - `inject`   – only inject nulls  
+  - `SENT-I` – only run imputation (expects `*_nonimputed.csv` already present)  
+  - `all`     – perform injection **then** imputation in sequence
 
 ## To run the IPM algorithm
 ____________________________________________________________________
