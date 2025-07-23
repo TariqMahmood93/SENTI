@@ -40,10 +40,6 @@ step = config[dataset]["step"]
   --initial {initial} \
   --step {step} \
   --mode all
-
-#--mode inject \   # Only inject nulls:
-#--mode SENT-I \   # Only run imputation (expects *_nonimputed.csv files already present):
-#--mode all \      # Do both injection and imputation in sequence:
 ```
 **Arguments**
 
