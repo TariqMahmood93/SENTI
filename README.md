@@ -20,7 +20,7 @@ ____________________________________________________________________
 # Define which dataset you want to run
 dataset = "adultsample"
 seed = 1234
-path = f"/root/workspace/Dynamic_Data_Imputation/v2/{dataset}"
+path = f"/root/workspace/SENTI/{dataset}"
 
 config = {
     "adultsample": {"initial": 1000, "step": 100},
@@ -33,7 +33,7 @@ config = {
 initial = config[dataset]["initial"]
 step = config[dataset]["step"]
 
-%run /root/workspace/Dynamic_Data_Imputation/v2/zCode/main.py \
+%run /root/workspace/SENTI/Code/main.py \
   --path {path} \
   --datasets {dataset} \
   --seeds {seed} \
