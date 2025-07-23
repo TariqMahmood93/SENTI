@@ -58,7 +58,6 @@ split    = "70_30"
 path      = f"/root/workspace/IPM-main/Dynamic_data/{dataset}/{split}/{training}_{folder}"
 code_file = f"/root/workspace/IPM-main/src/ipm_multi_v5_with_{training}.py"
 
-# 2) %run with $‑expansion of Python variables
 %run $code_file \
   --model_type roberta \
   --model_name_or_path deepset/roberta-base-squad2 \
