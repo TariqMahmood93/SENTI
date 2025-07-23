@@ -15,7 +15,30 @@ of dynamic data imputation tasks, providing a robust solution for handling missi
 * NVIDIA Apex
 
 ```bash
-conda install -c conda-forge nvidia-apex
-pip install -r requirements.txt
-python -m spacy download en_core_web_lg
+# Define which dataset you want to run
+dataset = "mammogram"
+seed = 584
+path = f"/root/workspace/Dynamic_Data_Imputation/v2/{dataset}"
+
+config = {
+    "adultsample": {"initial": 1000, "step": 100},
+    "australian": {"initial": 230, "step": 23},
+    "contraceptive": {"initial": 491, "step": 49},
+    "credit": {"initial": 218, "step": 22},
+    "flare": {"initial": 355, "step": 35},
+    "imdb": {"initial": 1510, "step": 151},
+    "mammogram": {"initial": 277, "step": 27},
+    "thoracic": {"initial": 157, "step": 15},
+}
+
+initial = config[dataset]["initial"]
+step = config[dataset]["step"]
+%run /root/workspace/Dynamic_Data_Imputation/v2/zCode/main.py \
+  --path {path} \
+  --datasets {dataset} \
+  --seeds {seed} \
+  --cum_pcts 0.05 0.05 0.1 0.2 \
+  --initial {initial} \
+  --step {step} \
+  --mode all
 ```
