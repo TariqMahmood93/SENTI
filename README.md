@@ -13,7 +13,9 @@ of dynamic data imputation tasks, providing a robust solution for handling missi
 * HuggingFace Transformers
 * Spacy with the ``en_core_web_lg`` models
 * NVIDIA Apex
-
+* 
+## To run the imputation algorithm
+____________________________________________________________________
 ```bash
 # Define which dataset you want to run
 dataset = "mammogram"
