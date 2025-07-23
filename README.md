@@ -14,3 +14,8 @@ of dynamic data imputation tasks, providing a robust solution for handling missi
 * Spacy with the ``en_core_web_lg`` models
 * NVIDIA Apex
 
+```bash
+conda install -c conda-forge nvidia-apex
+pip install -r requirements.txt
+python -m spacy download en_core_web_lg
+```
