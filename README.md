@@ -25,10 +25,7 @@ config = {
     "australian": {"initial": 230, "step": 23},
     "contraceptive": {"initial": 491, "step": 49},
     "credit": {"initial": 218, "step": 22},
-    "flare": {"initial": 355, "step": 35},
     "imdb": {"initial": 1510, "step": 151},
-    "mammogram": {"initial": 277, "step": 27},
-    "thoracic": {"initial": 157, "step": 15},
 }
 
 initial = config[dataset]["initial"]
