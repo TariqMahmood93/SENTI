@@ -43,25 +43,25 @@ step = config[dataset]["step"]
 ```
 **Arguments**
 
-- `--path {path}`  
+- `--path`  
   Path to the working directory (where input files are read from and outputs/logs are written).
 
-- `--datasets {dataset}`  
+- `--datasets`  
   One or more dataset identifiers to process (e.g., `adult`, `mnist`). Space‑separate or repeat the flag, depending on your parser.
 
-- `--seeds {seed}`  
+- `--seeds`  
   Random seed(s) for reproducibility of injection/imputation routines.
 
-- `--cum_pcts 0.05 0.05 0.1 0.2`  
+- `--cum_pcts`  
   Cumulative percentages of nulls to inject (`5`,`10`,`20`,`40`) in successive rounds.
 
-- `--initial {initial}`  
+- `--initial`  
   Starting chunk size.
 
-- `--step {step}`  
+- `--step`  
   Incrementally added new tuples.
 
-- `--mode {mode}`  
+- `--mode`  
   Controls what the script does:  
   - `inject`   – only inject nulls  
   - `SENT-I` – only run imputation (expects `*_nonimputed.csv` already present)  
