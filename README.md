@@ -17,7 +17,6 @@ of dynamic data imputation tasks, providing a robust solution for handling missi
 ## To run the SENTI algorithm
 ____________________________________________________________________
 ```bash
-# Define which dataset you want to run
 dataset = "adultsample"
 seed = 1234
 path = f"/root/workspace/SENTI/{dataset}"
@@ -55,8 +54,8 @@ folder   = "one_third_step_10%"
 seed     = 1234
 training = "fixed" # "fixed" or "Retraining"
 split    = "70_30"
-path      = f"/root/workspace/IPM-main/Dynamic_data/{dataset}/{split}/{training}_{folder}"
-code_file = f"/root/workspace/IPM-main/src/ipm_multi_v5_with_{training}.py"
+path      = f"/root/workspace/IPM-main/data/{dataset}/{split}/{training}_{folder}"
+code_file = f"/root/workspace/IPM-main/src/ipm_multi_{training}.py"
 
 %run $code_file \
   --model_type roberta \
