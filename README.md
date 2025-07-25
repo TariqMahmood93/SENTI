@@ -40,23 +40,17 @@ step = config[dataset]["step"]
 ```
 **Arguments**
 
-- `--path`  
-  Path to the working directory (where input files are read from and outputs/logs are written).
+- `--path`  Path to the working directory (where input files are read from and outputs/logs are written).
 
-- `--datasets`  
-  One or more dataset identifiers to process (e.g., `adult`, `credit`). Space‑separate or repeat the flag, depending on the parser.
+- `--datasets`  One or more dataset identifiers to process (e.g., `adult`, `credit`). Space‑separate or repeat the flag, depending on the parser.
 
-- `--seeds`  
-  Random seed(s) for reproducibility of injection/imputation routines.
+- `--seeds`  Random seed(s) for reproducibility of injection/imputation routines.
 
-- `--cum_pcts`  
-  Cumulative percentages of nulls to inject (`5`,`10`,`20`,`40`) in successive rounds.
+- `--cum_pcts`  Cumulative percentages of nulls to inject (`5`,`10`,`20`,`40`) in successive rounds.
 
-- `--initial`  
-  Starting chunk size.
+- `--initial` Starting chunk size.
 
-- `--step`  
-  Incrementally added new tuples.
+- `--step`  Incrementally added new tuples.
 
 - `--mode`  
   Controls what the script does:  
