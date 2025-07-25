@@ -42,7 +42,7 @@ step = config[dataset]["step"]
 
 - `--path`  Path to the working directory (where input files are read from and outputs/logs are written).
 
-- `--datasets`  One or more dataset identifiers to process (e.g., `adult`, `credit`). Space‑separate or repeat the flag, depending on the parser.
+- `--datasets`  One or more dataset identifiers to process (e.g., `adult`, `australian`). Space‑separate or repeat the flag, depending on the parser.
 
 - `--seeds`  Random seed(s) for reproducibility of injection/imputation routines.
 
