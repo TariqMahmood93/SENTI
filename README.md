@@ -1,9 +1,6 @@
 # Semantic-Aware Data Imputation in Dynamic Relational Databases via Pre-trained Language Models
 
-We propose a novel and innovative data imputation technique called Sentence Transformer-based Imputation (SENT-I).
- SENT-I leverages advanced indexing techniques to perform quick and accurate similarity searches, powered by 
-state-of-the-art sentence transformer models. This approach is designed to enhance the accuracy and efficiency 
-of dynamic data imputation tasks, providing a robust solution for handling missing data.
+We propose a novel and innovative data imputation technique called Sentence Transformer-based Imputation (SENT-I) to address the challenges of Dynamic Data Imputation (DDI)—the task of imputing missing values in incrementally updated databases. SENT-I leverages advanced indexing techniques to perform quick and accurate similarity searches by exploiting the inference capabilities of state-of-the-art sentence transformer models, without requiring any finetuning. This approach is designed to improve both the accuracy and efficiency, offering a robust and scalable solution for handling missing data over time.
 
 
 ## Requirements
