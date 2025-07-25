@@ -64,7 +64,7 @@ ____________________________________________________________________
 dataset  = "adultsample"
 folder   = "70_30"
 seed     = 1234
-training = "IPM<sub>f</" # "IPM_f" or "IPM"
+training = "IPM_f" # "IPM_f" or "IPM"
 path      = f"/root/workspace/IPM-main/data/{dataset}/{training}_{folder}"
 code_file = f"/root/workspace/IPM-main/src/ipm_multi_{training}.py"
 
