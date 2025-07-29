@@ -59,6 +59,8 @@ step = config[dataset]["step"]
   - `all`     – perform injection **then** imputation in sequence
 
 ## To run the IPM algorithm
+
+**To run the IPM algorithm, check the README file in the IPM directory.**
 ____________________________________________________________________
 ```bash
 dataset  = "adultsample"
