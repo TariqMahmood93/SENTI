@@ -62,10 +62,9 @@ step = config[dataset]["step"]
 ____________________________________________________________________
 ```bash
 dataset  = "adultsample"
-folder   = "70_30"
 seed     = 1234
-training = "IPM_f" # "IPM_f" or "IPM"
-path      = f"/root/workspace/IPM-main/data/{dataset}/{training}_{folder}"
+training = "fixed" # "fixed" or "Retraining"
+path      = f"/root/workspace/IPM-main/data/{dataset}/{training}"
 code_file = f"/root/workspace/IPM-main/src/ipm_multi_{training}.py"
 
 %run $code_file \
