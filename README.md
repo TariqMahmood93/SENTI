@@ -15,7 +15,6 @@ We propose a novel and innovative data imputation technique called Sentence Tran
 ____________________________________________________________________
 ```bash
 dataset = "adultsample"
-seed = 1234
 path = f"/root/workspace/SENTI/{dataset}"
 
 config = {
@@ -32,7 +31,7 @@ step = config[dataset]["step"]
 %run /root/workspace/SENTI/Code/main.py \
   --path {path} \
   --datasets {dataset} \
-  --seeds {seed} \
+  --seeds 1234 \
   --cum_pcts 0.05 0.05 0.1 0.2 \
   --initial {initial} \
   --step {step} \
@@ -44,7 +43,7 @@ step = config[dataset]["step"]
 
 - `--datasets`  One or more dataset identifiers to process (e.g., `adultsample`, `australian`). Space‑separate or repeat the flag, depending on the parser.
 
-- `--seeds`  Random seed(s) for reproducibility of injection/imputation routines.
+- `--seeds`  Random seed(s) for reproducibility of injection/imputation routines, space‑separate or repeat the flag for multiple seeds.
 
 - `--cum_pcts`  Cumulative percentages of nulls to inject (`5`,`10`,`20`,`40`) in successive rounds.
 
