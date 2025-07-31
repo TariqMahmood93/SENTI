@@ -65,8 +65,8 @@ ____________________________________________________________________
 dataset  = "adultsample"
 seed     = 1234
 training = "fixed" # "fixed" or "Retraining"
-path      = f"/root/workspace/IPM-main/data/{dataset}/{training}"
-code_file = f"/root/workspace/IPM-main/src/ipm_multi_{training}.py"
+path      = f"/root/workspace/IPM/Data/{dataset}/{training}"
+code_file = f"/root/workspace/IPM/src/ipm_multi_{training}.py"
 
 %run $code_file \
   --model_type roberta \
