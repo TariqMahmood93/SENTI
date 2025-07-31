@@ -10,7 +10,7 @@ We propose a novel and innovative data imputation technique called Sentence Tran
 * HuggingFace Transformers
 * Spacy with the ``en_core_web_lg`` models
 * NVIDIA Apex
-* 
+
 ## To run the SENTI algorithm
 ____________________________________________________________________
 ```bash
